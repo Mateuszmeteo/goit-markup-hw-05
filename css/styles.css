@@ -74,6 +74,26 @@
 }
 .head2list {
     /* background-color: cornsilk; */
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 10px; */
+}
+.head2list li {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+.head2list svg{ 
+    margin-right: 10px;
+    fill: #757575;
+}
+.head2list svg:hover{
+    cursor: pointer; 
+    fill: #2196F3;
 }
 .logoup {
     font-family: 'Raleway', sans-serif;
@@ -98,12 +118,15 @@
     letter-spacing: 0.02em;
 }
 .logoup3 {
+    /* background-color: darkgoldenrod; */
     color: #757575;
     font-size: 500;
     font-size: 14px;
     line-height: 0.875;
     /* line-height: 16px; */
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
 }
 .logoup2:hover {
     color: #2196F3;
@@ -111,16 +134,18 @@
 .logoup3:hover {
     color: #2196F3;
 }
-.nolink-mail {
+/* .nolink-mail { */
+    /* display: flex; */
+
     /* background-color: darkseagreen; */
     /* gap: 30px; */
     /* position: relative; */
-}
-.nolink-mail::after {
+/* } */
+/* .nolink-mail::after {
     background-color: darkred;
     width: 100%;
     height: 100%;
-}
+} */
 /* .nolink-mail::before {
     content: url();
     position: absolute;
@@ -211,8 +236,13 @@
     display: flex;
     gap: 10px;
 }
-.footdivtwo li {    
-    padding: 14px;
+.footdivtwo li {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    /* padding: 14px; */
     /* border: 1px solid red; */
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
@@ -238,12 +268,21 @@
     width: 358px;
     height: 50px;
     border-radius: 4px;
-    border-color: aqua;
+    /* border-color: aqua; */
     background-color:#2F303A;
 }
-.foot-div-three button {
+.foot-div-three-button {
     width: 200px;
     height: 50px;
+    background-color: rgba(33, 150, 243, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 0.53;
+    border-radius: 4px;
+    border: 0;
+    margin-left: 12px;
+    position: relative;
 }
 
 
@@ -346,11 +385,13 @@
 }
 
 .modal-head {
-    background-color: burlywood;
+    /* background-color: burlywood; */
     margin-top: 40px;
 }
 .modal-head h2 {
     font-size: 20px;
+    line-height: 0.85;
+    color: rgba(33, 33, 33, 1);
 }
 
 
@@ -362,17 +403,16 @@
     margin-top: 28px;
 }
 .form-one {
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
     display: flex;
     justify-content: center;
 }
 .fieldset {
-    background-color: chocolate;
+    /* background-color: chocolate; */
     border-color: var(--color-blue);
     border-radius: 4px;
     margin: 0;
     padding: 0;
-    border: 0;
     width: 448px;
     height: 40px;
     display: flex;
@@ -380,12 +420,11 @@
     position: relative;
 }
 .fieldset-sec {
-    background-color: rgb(30, 57, 210);
+    /* background-color: rgb(30, 57, 210); */
     border-color: var(--color-blue);
     border-radius: 4px;
     margin: 0;
     padding: 0;
-    border: 0;
     width: 448px;
     height: 120px;
     display: flex;
@@ -395,22 +434,26 @@
 
 .input-one {
     margin-left: 15px;
-    width: 150px;
+    width: 380px;
     height: 16px;
-    border-radius: 4px;
-    border-color: goldenrod;
+    /* background-color: cadetblue; */
+    /* border-radius: 4px; */
+    /* border-color: goldenrod; */
+    border: 0;
+    
+    color: rgba(117, 117, 117, 1);
 }
 
 .input-sec {
     font-size: 12px;
-    text-align:start;
     width: 416px;
     height: 96px;
     margin-left: 15px;
+    border: 0;
     /* width: 150px;
     height: 16px; */
-    border-radius: 4px;
-    border-color: goldenrod;
+    /* border-radius: 4px; */
+    /* border-color: goldenrod; */
 }
 .label-one {
     position: absolute;
@@ -438,9 +481,12 @@
 .modal-three-div button {
     width: 200px;
     height: 50px;
+    border: none;
     border-radius: 4px;
     font-family: inherit;
+    font-weight: 700px;
     font-size: 16px;
+    line-height: 0.53;
     background-color: rgba(33, 150, 243, 1);
     color: #ffffff;
 }
@@ -643,8 +689,14 @@
 }
 .teamdivsvg li {
     /* border: 1px solid rgb(152, 146, 158); */
+    /* background-color: crimson; */
     border-radius: 50%;
-    padding: 14px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 14px; */
     box-shadow: none;
     }
 .teamdivsvg li:hover {
